@@ -1,0 +1,10 @@
+11/23/2016 1:54:52 PM - CSCOADLS.VBS - Start of script execution
+11/23/2016 1:54:52 PM - Ensure SCCM Client is enabled
+11/23/2016 1:54:54 PM - SCCM agent is installed
+11/23/2016 1:54:54 PM - SCCM service not running
+11/23/2016 1:54:54 PM - Re-enabling CcmExec
+11/23/2016 1:55:04 PM - SCCM service Detected - checking site assignment
+11/23/2016 1:55:04 PM - SCCM Detected and running on valid site
+11/23/2016 1:55:04 PM - Apply AD Kerberos Reg Keys if missing
+11/23/2016 1:55:04 PM - Cleaning Log Files for CiscoTrustAgent
+11/23/2016 1:55:04 PM - CSCOADLS.VBS - End of script execution

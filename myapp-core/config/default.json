@@ -1,0 +1,10 @@
+{
+    "SAT": {
+        "App": {
+            "name": "Info",
+            "page1": "index",
+            "page2": "login",
+            "page3": "user"
+        }
+    }
+}

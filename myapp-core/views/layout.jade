@@ -2,6 +2,14 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/pulbic/stylesheets/style.css')
+    script(type="text/javascript", src="jquery-2.0.3.min.js")
+    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css")
+    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css")
+    link(rel="stylesheet", href="style.css")
+    script(type="text/javascript", src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js")
   body
-    block content
+   h1.page-header= appTitle
+   p Welcome to example from SAT  Tech by&nbsp;  
+     a(href="http://twitter.com/amsathishkumar") amsathishkumar
+block content
+block footer
