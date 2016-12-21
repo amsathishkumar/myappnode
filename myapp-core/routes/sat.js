@@ -91,6 +91,7 @@ router.post('/upload2',function(req, res, next) {
 	    },
 	    onFileUploadStart: function (file) {
 	    	console.log("file"+file);
+	    	done = false;
 	        console.log("onFileUploadStart");   
 	        },
 	    onFileUploadComplete: function (file) {
@@ -110,7 +111,9 @@ router.post('/upload2',function(req, res, next) {
 	    	console.log("onFileSizeLimit");
 	    }	    
 	});
-    mUpload(req, res, next);
+    mUpload(req, res, function(){
+    	console.log(done);
+    });
 })
 
 
