@@ -95,9 +95,11 @@ router.post('/upload2',function(req, res, next) {
 	        console.log("onFileUploadStart");   
 	        },
 	    onFileUploadComplete: function (file) {
-	    	 console.log("onFileUploadComplete");	    	 
+	    	 console.log("onFileUploadComplete");	 
+	    	 setTimeout(function(){
+	    		 console.log("completed");
+	    	 },100);	    	 
 	    	 done = true;
-	    	 res.status(200).send("File upload to sat2 complete\n");
 	    	 satc(file);
 	    },
 	    changeDest: function(dest, req, res) { 
@@ -112,7 +114,7 @@ router.post('/upload2',function(req, res, next) {
 	    }	    
 	});
     mUpload(req, res, function(){
-    	console.log(done);
+       	console.log("Done value"+done);
     });
 })
 
