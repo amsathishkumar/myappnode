@@ -5,6 +5,11 @@
             "page1": "index",
             "page2": "login",
             "page3": "user"
+        },
+        "MongoDB":{
+            "mongo_url": "localhost",
+            "mongo_port": "27017",
+            "mongo_name": "sat_db"
         }
     }
 }

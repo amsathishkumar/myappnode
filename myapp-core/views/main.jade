@@ -1,18 +1,18 @@
 extends layout
- 
+
 block content
     p Welcome to #{name}
-    h2 Main Device Enrty 
+    h2 Main Device Enrty
       div
        .col-md-4.col-md-offset-4
-        form(action="/sat/232/theni-chennai", method="POST")
+        form(method="POST",enctype="multipart/form-data",action="/sat/upload1")
           p
             Device: input.form-control(name="device", type="text", placeholder="DV0001")
           p
              input.form-control(name="filename", type="file")
-          p 
+          p
             button.btn.btn-lg.btn-primary.btn-block(type="submit") Send
-            
+
          form(method="post",enctype="multipart/form-data",action="/sat/upload")
            p
              input(type="text",name="title",placeholder="title")
@@ -20,4 +20,3 @@ block content
              input(type="file",name="upl")
            p
              input(type="submit")
-       

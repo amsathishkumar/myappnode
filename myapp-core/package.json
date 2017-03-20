@@ -17,6 +17,7 @@
     "log4js": "^0.6.33",
     "lodash": "==2.4.1",
     "config": "^1.19.0",
+    "mongodb": "==1.4.10",
     "ltx": "^2.2.0"
   },
   "description": "sample",
