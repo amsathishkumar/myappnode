@@ -10,6 +10,8 @@ var config = cfg.SAT;
 var routes = require('./routes/'+config.App.page1);
 var users = require('./routes/users');
 var sat = require('./routes/sat');
+var satparam = require('./routes/satparam');
+var satemit = require('./routes/satemit');
 var login = require('./routes/'+config.App.page2);
 
 var app = express();
@@ -30,6 +32,8 @@ app.use(express.static(path.join(__dirname, 'scripts')));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/sat', sat);
+app.use('/satparam', satparam);
+app.use('/satemit', satemit.satemitcomplete);
 app.use('/login', login);
 
 app.use(function (req, res, next) {
